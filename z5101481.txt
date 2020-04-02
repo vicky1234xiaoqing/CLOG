@@ -9,3 +9,6 @@ I create app.py and use flask as the python server framework. I will build a RES
 Week 3
 
 Disscussed with Jia Chen and develop the RESTFul API, provide some demo data.
+
+Week 6
+We re-start this project and I combined rear-end with frontend. 
