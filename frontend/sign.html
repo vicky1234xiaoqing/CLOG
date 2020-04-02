@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Course Learning Outcome Generator</title>
+        <meta name="viewport" content="width-width, user-scalable=no,
+                initial=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <link href="css/bootstrap.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">CLOG</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor02">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Course</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Items</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-secondary my-2 my-sm-0">Log in</button>
+                <button class="btn btn-secondary my-2 my-sm-0">Help</button>
+              </form>
+            </div>
+          </nav>
+
+          <div style="width:100%; margin:10px 5px;">
+            <form style="height:200px; width:500px; margin:0px auto;">
+                <fieldset>
+                  <legend>Sign Up</legend>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Student ID</label>
+                    <input class="form-control" id="StudentID" placeholder="Enter Student ID">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Academic Office Password of Sudent ID</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <small id="emailHelp" class="form-text text-muted">We'll use it to check your curriculum.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleSelect1">Grade</label>
+                    <select class="form-control" id="exampleSelect1">
+                      <option>Undergraduate</option>
+                      <option>Postgraduate</option>
+                      <option>PhD</option>
+                      <option>Teacher</option>
+                      <option>Others</option>
+                    </select>
+                  </div>
+                  <fieldset class="form-group">
+                    <legend>Please let us know if you are Newer</legend>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                        I am a Newer, and need the help for the first log-in.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                        I am a Newer, but NOT need the help for the first log-in.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+                        I am older of this system.
+                      </label>
+                    </div>
+                  </fieldset>
+                  <fieldset class="form-group">
+                    <legend>Do you allow us to send E-mail to you for our Station information?</legend>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="" checked="">
+                        Please send me and remind me!
+                      </label>
+                    </div>
+                  </fieldset>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </fieldset>
+              </form>
+          </div>
+         
+
+        <script src='js/bootstrap.js'></script>
+    </body>
+</html>
