@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Course Learning Outcome Generator</title>
+        <meta name="viewport" content="width-width, user-scalable=no,
+                initial=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <link href="css/bootstrap.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">CLOG</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor02">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Course</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Items</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-secondary my-2 my-sm-0">Help</button>
+              </form>
+            </div>
+          </nav>
+
+          <div style="width:100%; margin:10px 5px;">
+            <form style="height:200px; width:500px; margin:0px auto;">
+                <fieldset>
+                  <legend>Hello! Please join course by the steps in the following:</legend>
+                  <small class="form-text text-muted">You can entry the information of course below. The name and ID of course must be done. Others you can do as you want to do.</small>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Course Name</label>
+                    <input class="form-control" id="name_course" placeholder="Enter the name">
+                    <small class="form-text text-muted">Please input the name as the same as the name in school!</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Course ID</label>
+                    <input class="form-control" id="id_course" placeholder="Enter the ID of course">
+                    <small class="form-text text-muted">Please input the ID as the same as the name in school!</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleSelect1">Student Type</label>
+                    <select class="form-control" id="course_type">
+                      <option>Elective</option>
+                      <option>Compulsory</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleTextarea">Course Comprehension</label>
+                    <textarea class="form-control" id="compre_course"  rows="2" placeholder="You can input your Comprehension of this course here. These will be sent to the teacher."></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleTextarea">What you want to know?</label>
+                    <textarea class="form-control" id="want_course"  rows="2" placeholder="You can input the knowledge you want to learn in this course."></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleTextarea">Others</label>
+                    <textarea class="form-control" id="others"  rows="3" placeholder="If you want to raise more things, please input here. These will be sent to the teacher or tutor."></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleTextarea">Expected Grade</label>
+                    <textarea class="form-control" id="others"  rows="1" placeholder="Input a number in 1-100 as your expected grade for this course."></textarea>
+                  </div>
+                  <button type="SUMMIT" class="btn btn-primary">Submit</button>
+                </fieldset>
+              </form>
+          </div>
+         
+
+        <script src='js/bootstrap.js'></script>
+    </body>
+</html>
