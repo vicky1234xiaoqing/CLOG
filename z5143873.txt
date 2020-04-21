@@ -13,11 +13,16 @@ week 4
 First， draw the website homepage, login and registration pages, shopping cart and checkout page, and then find out the calculation method of the recommendation system, 
 familiar with the calculation method of cosine similarity.
 
+
+
 week 5
+Make the login and logup pages and make the Newer for student and teacher page for our project.
 
 week 6
+Together to help create the database, and combine the situation after the discussion and the required data to design the pages like ER and LR.
 
 week 7
+Modify and improve the pages of newer for teacher and student.
 
 week 8
  
