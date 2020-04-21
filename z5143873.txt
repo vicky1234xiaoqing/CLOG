@@ -25,7 +25,10 @@ week 7
 Modify and improve the pages of newer for teacher and student.
 
 week 8
- 
+Make dynamic score tables for a sigle student and a teacher
+
 week 9
+Create a table of all student achievements that the dynamic teacher can query，
 
 week 10
+Modify code and front pages, prepare demo.
