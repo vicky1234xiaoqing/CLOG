@@ -1,0 +1,26 @@
+Week 1
+Finding the group member who is also not in Sydney for first few weeks. Discuss challenges and technic of projects.
+Finaly, we decided the project which we will work on. We also list pros and cons of existing website to improve our project.
+
+Week 2
+First, I browsed some related papers on e-commerce, learned the development background of e-commerce, the main background, and provided materials for writing our proposal.
+Then, draw on some popular websites such as Amazon, Alibaba, and design some sketches of our website's main page, login page, etc.
+
+week 3 
+Have a meeting with the team members and write the proposal. I am responsible for the overall framework design.
+
+week 4
+First， draw the website homepage, login and registration pages, shopping cart and checkout page, and then find out the calculation method of the recommendation system, 
+familiar with the calculation method of cosine similarity.
+
+week 5
+
+week 6
+
+week 7
+
+week 8
+ 
+week 9
+
+week 10
