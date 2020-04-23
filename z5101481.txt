@@ -12,3 +12,19 @@ Disscussed with Jia Chen and develop the RESTFul API, provide some demo data.
 
 Week 6
 We re-start this project and I combined rear-end with frontend. 
+
+Week 7
+
+I design the Databases for our project and set it up in my computer. Also, I have finished the urls for our website.
+
+Week 8
+
+I create the POST method and json method for data which is sent between rear and front. That's really usefull. We can figure the data problem.
+
+Week 9
+
+I store the data in MySQL. But there is something wrong for data displayed in the front end. So I write some js and help my teammate to confirm the data type and structure.
+
+Week 10
+
+There are some pages that are wrong in sometimes. We figure it. Beacuse the Database doesn't have the data we need. I write the API for check data.
