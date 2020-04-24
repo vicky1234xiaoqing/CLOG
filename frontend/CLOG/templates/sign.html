@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Course Learning Outcome Generator</title>
+        <meta name="viewport" content="width-width, user-scalable=no,
+                initial=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <link href="static/css/bootstrap.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">CLOG</a>
+          
+            <div class="collapse navbar-collapse" id="navbarColor02">
+              <form class="form-inline my-2 my-lg-0">
+                <a href="/login/"><button type="button" class="btn btn-primary">Log in</button></a>
+                <a href="/"><button type="button" class="btn btn-primary">Sign Up</button></a>
+              </form>
+            </div>
+          </nav>
+
+          <div style="width:100%; margin:10px 5px;">
+            <form style="width:500px; margin:0px auto;" method = 'post' enctype="multipart/form-data">
+              {% csrf_token %}
+                <fieldset>
+                  <legend>Sign Up</legend>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" id="pw1" class="form-control" name="Password" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Confirm Password</label>
+                    <input type="password" id="pw2" class="form-control" name="Password" placeholder="Confirm Password" onkeyup="validate()">
+                    <small id="emailHelp" class="form-text text-muted"><span id="tishi"></span></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Student ID</label>
+                    <input class="form-control" name="StudentID" placeholder="Enter Student ID">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Academic Office Password of Sudent ID</label>
+                    <input type="password" class="form-control" name="password2" placeholder="Password">
+                    <small id="emailHelp" class="form-text text-muted">We'll use it to check your curriculum.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleSelect1">Grade</label>
+                    <select class="form-control" name="Grade">
+                      <option>Undergraduate</option>
+                      <option>Postgraduate</option>
+                      <option>PhD</option>
+                      <option>Teacher</option>
+                      <option>Others</option>
+                    </select>
+                  </div>
+                  <fieldset class="form-group">
+                    <legend>Please let us know if you are Newer</legend>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="newer" id="newer" value="newer1" checked="">
+                        I am a Newer, and need the help for the first log-in.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="newer" id="nonewer" value="newer2">
+                        I am a Newer, but NOT need the help for the first log-in.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="newer" id="nonewer2" value="newer3">
+                        I am older of this system.
+                      </label>
+                    </div>
+                  </fieldset>
+                  <fieldset class="form-group">
+                    <legend>Do you allow us to send E-mail to you for our Station information?</legend>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="yes" checked="checked">
+                        Please send me and remind me!
+                      </label>
+                    </div>
+                  </fieldset>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </fieldset>
+              </form>
+
+          </div>
+
+          <script>
+            function validate() {
+            var pw1 = document.getElementById("pw1").value;
+            var pw2 = document.getElementById("pw2").value;
+            if(pw1 == pw2) {
+            document.getElementById("tishi").innerHTML="<font color='green' class='form-text text-muted'>ok</font>";
+            document.getElementById("submit").disabled = false;
+            }
+            else {
+            document.getElementById("tishi").innerHTML="<font class='form-text' color='red' >Password is not same</font>";
+            document.getElementById("submit").disabled = true;
+            }
+            }
+            </script>
+          <!--
+          <div style="width:100%; margin:10px 5px;text-align:center">
+            <a href="templates/login.html"><button type="LOG-IN" class="btn btn-primary">As teacher</button></a>
+            <a href="./login.html"><button type="LOG-IN" class="btn btn-primary">As student</button></a>
+          </div>
+          -->
+          <script type="text/javascript" src="static/js/jquery-3.4.1.min.js"></script>
+          <script type="text/javascript" src="static/js/popper.min.js"></script>
+          <script src='static/js/bootstrap.min.js'></script>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>Course Learning Outcome Generator</title>
+        <meta name="viewport" content="width-width, user-scalable=no,
+                initial=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <link href="../static/css/bootstrap.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../static/css/bootstrap.min.css" type="text/css"></link>
+        <script type="text/javascript">
+
+          window.onload = tableclick;
+
+          function tableclick(){
+            //alert("success!");
+            str1={{ str_nuli|safe }};
+            str2={{ str_zixin|safe }};
+            //alert(str1);
+            str1 = "Effort Score: " + str1;
+            //alert(str1);
+            nuli.innerHTML = str1;
+            str2 = "Confidence Score: "+str2;
+            //alert(str2);
+            zixin.innerHTML = str2;
+            //alert(str2);
+            return 0;
+          }
+        </script>
+    </head>
+    <style>
+        body{ text-align:center} 
+    </style>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">CLOG</a>
+          </nav>
+          
+          <div style="width:80%; margin:10px auto;">
+            <legend>Final Report</legend>
+            <div id = "nuli" name = "nuli"></div>
+            <div id = "zixin" name = "zixin"></div>
+            <p>You finally get the grade of {{grade}}</p>
+            <p>Thanks for using our system. {{message}}</p>
+          </div>
+
+          <a href="/LR_s/"><button type="button" class="btn btn-primary">Back</button></a>
+          <a href="/feedback_s/"><button type="button" class="btn btn-primary">Feedback</button></a>
+         
+
+        
+        <script type="text/javascript" src="../static/js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="../static/js/popper.min.js"></script>
+        <script src='../static/js/bootstrap.min.js'></script>
+    </body>
+</html>

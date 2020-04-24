@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Course Learning Outcome Generator</title>
+        <meta name="viewport" content="width-width, user-scalable=no,
+                initial=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <link href="../static/css/bootstrap.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">CLOG</a>
+          
+          </nav>
+
+          <div style="width:100%; margin:10px 5px;">
+            <form style="width:500px; margin:0px auto;" method = 'post' enctype="multipart/form-data">
+              {% csrf_token %}
+                <fieldset>
+                  <legend>Hello! Please entry course by the steps in the following:</legend>
+                  <small class="form-text text-muted">You can entry the information of course below. The name and ID of course must be done. Others you can do as you want to do.</small>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Course Name</label>
+                    <input class="form-control" id="name_course" name='c_name' placeholder="Enter the name">
+                    <small class="form-text text-muted">Please input the name as the same as the name in school!</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Course ID</label>
+                    <input class="form-control" id="id_course" name='c_id' placeholder="Enter the ID of course">
+                    <small class="form-text text-muted">Please input the ID as the same as the name in school!</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleSelect1">Faculties</label>
+                    <select class="form-control" name = 'c_type' id="course_type">
+                      <option>Art&Design</option>
+                      <option>Art&Social Science</option>
+                      <option>Law</option>
+                      <option>Medicine</option>
+                      <option>Science</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleSelect1">Course Format</label>
+                    <select class="form-control" name='c_format' id="course_format">
+                      <option>Distance</option>
+                      <option>In person</option>
+                    </select>
+                  </div>
+                  <fieldset class="form-group">
+                    <legend>Assessment Type</legend>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="hidden" name="home" value="0">
+                        <input class="form-check-input" name="home" type="checkbox" value="1" checked="">
+                        Homework
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="hidden" name="exper" value="0">
+                        <input class="form-check-input" name="exper" type="checkbox" value="1" checked="">
+                        Experiment
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="hidden" name="attend" value="0">
+                        <input class="form-check-input" name="attend" type="checkbox" value="1" checked="">
+                        Attendance
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="hidden" name="exam" value="0">
+                        <input class="form-check-input" name='exam' type="checkbox" value="1">
+                        Exam
+                      </label>
+                    </div>
+                    <input type="hidden" name="ass_type" value="0">
+                    <textarea class="form-control" id="others"  rows="3" name='ass_type' value='0' placeholder="If you want other types, Please input here. Use ',' to divide them. If no, do not fill up anything."></textarea>
+                  </fieldset>
+                  <div class="form-group">
+                    <label for="exampleTextarea">Course Introduction</label>
+                    <textarea class="form-control" id="intro_course"  rows="2" name='c_intr' placeholder="You can input the introduction of this course here. These will be shown in the student course information."></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleTextarea">Course Requirements</label>
+                    <textarea class="form-control" id="Req_course"  rows="2" name='c_req' placeholder="You can input the Requirements of this course here. These will be shown in the student courses."></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleTextarea">Others</label>
+                    <textarea class="form-control" id="others"  rows="3" name='others' value='0' placeholder="If you want to get more Requirements or Sections, please input here. These will be shown to the administrator. Or you can send E-mail to XXXX@xxx.com for more question."></textarea>
+                  </div>
+                  <!--<button type="SUMMIT" class="btn btn-primary">Submit</button>-->
+                </fieldset>
+                <div style="width:100%; margin:10px 5px;text-align:center">
+                  <button type="summit" class="btn btn-primary">Submit</button>
+              </div>
+              </form>
+          </div>
+          
+        <script src='../static/js/bootstrap.js'></script>
+    </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>Course Learning Outcome Generator</title>
+        <meta name="viewport" content="width-width, user-scalable=no,
+                initial=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <link href="../static/css/bootstrap.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../static/css/bootstrap.min.css" type="text/css"></link>
+        <script type="text/javascript">
+
+          window.onload = tableclick;
+
+          function tableclick(){
+            Trow={{ row|safe }};
+            Tcol={{ col|safe }};
+            Trowv={{ student|safe }};
+            Tcolv={{ col_name|safe }};
+            //alert(Trow=="");
+            //alert(Trowv);
+            r=parseInt(Trow);
+            c=parseInt(Tcol);
+            if (r==0 && c==0){
+              fzb.innerHTML='Success update the grades of student!';
+              return 0;
+            }
+              
+            Table1(r,c,Tcolv,Trowv);
+          }
+          function tablevalue(a,ai,rows,col,str){
+            int1=a.length;
+            str=str+"<tbody>";
+            for (i=0;i<rows;++i){
+              for (j=0;j<col+1;++j){
+                if ((j==0)&&(ai>=int1)){break;}
+                if (0){
+                  str=str+"<td scope='col'></td>";
+                  }
+                else{
+                  if (j==0){
+                    str=str+"<tr><th scope='col'> "+(a[ai++])+"</th>";
+                    }
+                  else{
+                    if (j==col){
+                      str=str+"<td scope='col'><input name='abc'></td>";
+                      }
+                    else{
+                      str=str+"<td scope='col'><input name='abc'></td>";
+                      }
+                  }
+                }
+              }
+              str=str+"</tr>";
+            }
+            str=str+"</tbody>";
+            return str;
+          }
+          function Table1(row,col,Str1,Str2){
+            var str="";
+            a=new Array();
+            s=new String(Str1);
+            a=s.split("#");
+            int1=a.length;
+            ai=0;
+            a2 = new Array();
+            s2= new String(Str2);
+            a2 = s2.split("#");
+            int2 = a2.length;
+            a2i = 0;
+            if (col<=int1){
+              str=str+"<table class=\"table table-hover\" name=\"tablef\"><thead>";
+              for (i=0;i<col+1;++i){
+                if (i==0){
+                  str=str+"<tr><th scope='col'> Student Name</th>";
+                  }
+                else{
+                  if (i==col){
+                    str=str+"<th scope='col'> "+(a[ai++])+"</th></tr></thead>";
+                    }
+                  else{
+                    str=str+"<th scope='col'> "+(a[ai++])+"</th>";
+                    }
+                }
+              }
+              if (row>0){
+                str=tablevalue(a2,a2i,row,col,str);
+              }
+              str=str+ "</table>";
+              //alert(str);
+              fzb.innerHTML=str;
+              }
+          }
+          </script>
+    </head>
+    <style>
+        body{ text-align:center} 
+    </style>
+    
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">CLOG</a>
+          </nav>
+          <form style="width:80%; margin:0px auto;" method = 'post' enctype="multipart/form-data">
+            {% csrf_token %}
+            <div style="width:80%;" id="fzb"></div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </from>
+
+          <a href="/LR_t/"><button type="button" class="btn btn-primary">Back</button></a>
+          <a href="/feedback_t/"><button type="button" class="btn btn-primary">Feedback from student</button></a>
+          
+         
+
+        
+        <script type="text/javascript" src="../static/js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="../static/js/popper.min.js"></script>
+        <script src='../static/js/bootstrap.min.js'></script>
+    </body>
+</html>
