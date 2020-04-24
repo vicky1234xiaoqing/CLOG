@@ -9,3 +9,24 @@ I read some paper and some materials about "Text Abstract" technology.
 
 Week3
 Read some paper and design the experiments for project.
+
+Week4
+Oops...I had to drop this course due to travel ban.
+
+Week5
+According to new UNSW`s policy of COVID-19. University allowed us to achieve this course online all the time. Therefore, two of us and another two friends set up the new group and re-start project
+
+Week6
+I thought what would be the suitable algorithm of this project and what generation would be implemented
+
+Week7
+Propose an algorithm to figure out dataset and train a model to test. Using NLP to write LR and ER generator.
+
+Week8
+I finished LR and ER generation and demostrated to the tutor. I started a important generation "consolidated result" 
+
+Week9
+Consolidate result generation initially finished, but it still had mistake. 
+
+Week10
+Consolidate result completely finished within suitable formula and algorithm. Our team had a successful final demostration. 
