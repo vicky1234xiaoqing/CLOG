@@ -19,16 +19,16 @@ week 5
 Make the login and logup pages and make the Newer for student and teacher page for our project.
 
 week 6
-Together to help create the database, and combine the situation after the discussion and the required data to design the pages like ER and LR.
+Together to help create the database, and combine the situation after the discussion and the required data to design the pages like "teacher can add course information", "student can join course".
 
 week 7
-Modify and improve the pages of newer for teacher and student.
+Modify and improve the two pages last week, changed the assessment type, which added an add box, and give tutor a detailed introduction to the reasons and uses of setting up "course comprehension" and "what do you want to learn", and create two front-end pages: ER_student, LR_student.
 
 week 8
-Make dynamic score tables for a sigle student and a teacher
+Make dynamic tables for a teacher can view all students ER_student, because the teacher can choose to see the ER of any student, so design a table that the teacher can score for each student. And we also have a student self score page.
 
 week 9
-Create a table of all student achievements that the dynamic teacher can query，
+Improve the code of the 8th week, and design the final feedback interface: feedback_student, feedback_teacher.
 
 week 10
-Modify code and front pages, prepare demo.
+Modify code and front pages, prepare demo，responsible for running and explaining the process of the entire system.
