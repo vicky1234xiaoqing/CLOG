@@ -15,3 +15,15 @@ Three members of our team took the program leave. The rest of us had to find ano
 
 Week 6
 New group found. Started to work on project 2. We discussed the project and the scope. And then finished the basic sign up and sign in page for the learning outcome generator.
+
+Week 7
+Finally determined the structure of the whole project. This week I improved the user system, and helped to write the LR and ER generator.
+
+Week 8
+Discussed the grades generation and the logic. Fixed some user stories that pointed out by our tutor. Start to write the report.
+
+Week 9
+Tested the system with a large mount of examples to see if there is any bugs. Got some mistakes and fixed them. Continue the report.
+
+Week 10
+Modified the code and make sure the system can run smoothly. Finish the report.
