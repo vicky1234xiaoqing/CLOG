@@ -1,1 +1,1 @@
-# COMP9900
+# the code of a course learning outcome generator.
